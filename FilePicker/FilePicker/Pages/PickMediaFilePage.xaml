@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FilePicker.Pages.PickMediaFilePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Button
+                x:Name="ButtonPickMediaFile"
+                Clicked="ButtonPickMediaFile_Clicked"
+                Text="Pick a media file" />
+
+            <Button
+                x:Name="ButtonOpenCamera"
+                Clicked="ButtonOpenCamera_Clicked"
+                Text="Take a photo" />
+
+            <Image
+                x:Name="ImageFile"
+                HeightRequest="300"
+                WidthRequest="300" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

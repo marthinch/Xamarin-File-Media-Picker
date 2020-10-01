@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FilePicker.Pages.PickMultipleFilePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button
+                x:Name="ButtonPickMultipleFile"
+                Clicked="ButtonPickMultipleFile_Clicked"
+                Text="Pick multiple file" />
+
+            <CollectionView x:Name="CollectionViewFiles">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Image
+                            HeightRequest="200"
+                            Source="{Binding .}"
+                            WidthRequest="200" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
